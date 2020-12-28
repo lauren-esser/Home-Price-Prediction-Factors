@@ -17,7 +17,7 @@ Selling a home can be stressful, homeowners ask themselves the question "What ca
 ### Data
 Data comes from Kaggle.com titled "House Sales in King County, USA". [Linked Here](https://www.kaggle.com/harlfoxem/housesalesprediction) To access data select the Download button on the right side of screen. The dataset contains 21 different features listed and explained below:
 
-<div class="alert alert-block alert-info"> 
+
 * *id* - identification for each home
 
 * *date* - date house was sold
@@ -58,7 +58,7 @@ Data comes from Kaggle.com titled "House Sales in King County, USA". [Linked Her
 
 * *sqft_living15* - square footage of living space for nearest 15 neighbors
 
-* *sqft_lot15* - square footage of the lot for nearest 15 neighbors.</div>
+* *sqft_lot15* - square footage of the lot for nearest 15 neighbors.
 
 ### Methods
 Throughout this OLS Regression Analysis I used the OSEMN framework to help guide my decisions. 
@@ -107,17 +107,17 @@ I did not find any abnormalities within the data.
 
 
 I had three questions that I wanted to answer within the Explore section of my notebook. 
-* Is there multicollinearity among features?
+* **Is there multicollinearity among features?**
 
-ANSWER: We can see that there is multicollinearity among features in the data set. Using a combination of the correlation method and the vif method we were able to see that many columns had an issule with multicollinearity. By dropping these columns the multicollinearity dropped from 2.84e+08 to 2.99e+07.
+*ANSWER*: We can see that there is multicollinearity among features in the data set. Using a combination of the correlation method and the vif method we were able to see that many columns had an issule with multicollinearity. By dropping these columns the multicollinearity dropped from 2.84e+08 to 2.99e+07.
 
-* Do outliers impact the overall model?
+* **Do outliers impact the overall model?**
 
-ANSWER: When I first removed all the outliers in the dataset I was left with hardly anything to work with. (about 4000 rows) When I went back and only removed the outliers for price my R2 value rose and my multicollinearity dropped. This shows that removing outliers does have an impact on models and it is in the hands of the data scientist to make the correct choices.
+*ANSWER*: When I first removed all the outliers in the dataset I was left with hardly anything to work with. (about 4000 rows) When I went back and only removed the outliers for price my R2 value rose and my multicollinearity dropped. This shows that removing outliers does have an impact on models and it is in the hands of the data scientist to make the correct choices.
 
-* Does log transformation improve the overall model?
+* **Does log transformation improve the overall model?**
 
-ANSWER: By observing the sixth and seventh OLS Regression Analysis, we are able to see that log transformation improved the R^2 value and dropped the multicollinearity. This shows that log transformation can impact the overall model positively.
+*ANSWER*: By observing the sixth and seventh OLS Regression Analysis, we are able to see that log transformation improved the R^2 value and dropped the multicollinearity. This shows that log transformation can impact the overall model positively.
 
 I began my Explore section by taking the time to look at joint graphs comparing the different columns to that of the target, price. To do this I made the below function which was then used with @interact for ease of accessing different plots.
 
@@ -173,7 +173,7 @@ Other items conducted within the Model phase:
 * Discussion of findings.
 * Recommended improvements: increase number of bedrooms and bathrooms, use high grade material while building, purchase a house that is waterfront, have at least 3 viewings before selling your home, and consider location.
     
-
+---
 
 ### Results
 
